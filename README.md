@@ -16,7 +16,8 @@ user@name:~$ npm install selenium-standalone@latest -g
 ```console
 user@name:~$ npm i
 ```
-5. Запустить selenium-standalone
+5. Скопировать .env.default, назвав .env. B поправить конфигурацию под себя
+6. Запустить selenium-standalone
 ```console
 user@name:~$ npm run selenium:install
 ```
