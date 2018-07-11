@@ -1,4 +1,4 @@
-describe("Blank", () => {
+   describe("Blank", () => {
 	it("upButton is ok", function() {
 		browser.url("/");
 		browser.waitForVisible("#main");
