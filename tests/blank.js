@@ -8,23 +8,19 @@ describe("Blank", () => {
 	});
 	it("has orderForm", function() {
 		browser.url("/");
-		browser.waitForVisible("#ul-id-922-0");
+		browser.waitForVisible("#ul-id-1838-2");
 		browser.pause(1200);
 		expect(global.browser).to.deep.equal(browser);
-		$("#ul-id-922-0 a").click();
+		$("#ul-id-1838-2 a").click();
 		browser.pause(1200);
-		expect(browser.isVisible("#aDialog-content")).to.be.true;
-		var orderForm = $("#aDialog-content");
+		expect(browser.isVisible("#aDialog-data")).to.be.true;
+		var orderForm = $("#aDialog-data");
 		orderForm.$$("input").forEach(element => {});
 		orderForm.$$("input")[0].setValue("asdsa@dsadsa.as");
-		browser.pause(1200);
 		orderForm.$$("input")[1].setValue("22222222222");
-		browser.pause(1200);
 		orderForm.$$("textarea")[0].setValue("sadsadsadsadsadsdas");
-		browser.pause(1200);
 		$("#aDialog-content div.js-orderForm-btn").click();
 		browser.pause(1200);
 		expect(browser.isVisible(".ul-orderForm-status-dialog")).to.be.true;
 	});
 });
-// global.browser === browser
